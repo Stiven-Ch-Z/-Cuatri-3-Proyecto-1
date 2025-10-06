@@ -195,6 +195,7 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="CapaDatos\Mensaje.cs" />
+    <Compile Include="CapaDatos\MensajeRepositorio.cs" />
     <Compile Include="CapaNegocio\MensajeNegocio.cs" />
     <Compile Include="CapaPresentacion\Chat.aspx.cs">
       <DependentUpon>Chat.aspx</DependentUpon>
