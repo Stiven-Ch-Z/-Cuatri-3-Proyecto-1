@@ -17,13 +17,13 @@ namespace Proyecto1.CapaDatos
             mensaje.FechaHora =DateTime.Now;
             mensajes.Add(mensaje);   //agrega el nuevo mensaje a la lista
         }
-        public List<Mensaje> ObtenerTodos() //read devolver los alumnos de la lista
+        public List<Mensaje> ObtenerTodos() //read devolver los mensajes de la lista
         {
             return mensajes;
         }
-        public void Actualizar(int id, string alias, string nuevoTexto)//actualiza los datos de un estudiante existente
+        public void Actualizar(int id, string alias, string nuevoTexto)//actualiza los datos de un mensaje existente
         {
-            var existente = mensajes.FirstOrDefault(a => a.Id == id && a.Alias == alias );//busca el alumno con el id unico que tiene 
+            var existente = mensajes.FirstOrDefault(a => a.Id == id && a.Alias == alias );//busca al mensaje con el id unico que tiene 
 
             if (existente != null )//si lo encuentra actualiza los datos 
             {
@@ -32,9 +32,9 @@ namespace Proyecto1.CapaDatos
                 existente.FechaEditado = DateTime.Now;
             }
         }
-        public void Eliminar(int id, string alias) //funcion para eliminar un alumno de la lista 
+        public void Eliminar(int id, string alias) //funcion para eliminar un mensaje de la lista 
         {
-            var mensaje = mensajes.FirstOrDefault(a => a.Id == id && a.Alias == alias);//busca por id el alumno 
+            var mensaje = mensajes.FirstOrDefault(a => a.Id == id && a.Alias == alias);//busca por id del mensaje 
 
             if (mensaje != null)//si lo encuentra lo mata (borra)
             {

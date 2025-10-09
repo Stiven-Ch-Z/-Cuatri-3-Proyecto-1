@@ -102,6 +102,7 @@
     <Content Include="About.aspx" />
     <Content Include="CapaPresentacion\Chat.aspx" />
     <Content Include="CapaPresentacion\Estilos\estilos.css" />
+    <Content Include="CapaPresentacion\Imagenes\fondochat.jpg" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />

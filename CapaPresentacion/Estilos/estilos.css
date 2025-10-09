@@ -1,2 +1,143 @@
 ﻿body {
+    font-family: Arial, sans-serif;
+    background: url('../imagenes/fondochat.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+p{
+    text-align: center;
+}
+
+
+.panel {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 400px;
+}
+
+.Droplista {    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0078d4;
+    color: white;
+    cursor: pointer;
+}
+.burbuja-propia .txtMensaje {
+    width: 100%;
+    margin-top: 4px;
+}
+
+.btn-mini {
+    font-size: 11px;
+    padding: 4px 6px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.contenedor-caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h3 {
+    text-align: center;
+}   
+}
+.caja-chat {
+    width: 400px;
+    background-color: #6EFFFF;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.chat-header {
+    background-color: #4AADE8;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.burbuja-propia, .burbuja-otro {
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 12px;
+    margin: 6px;
+    word-wrap: break-word;
+}
+
+.burbuja-propia {
+    background-color: #EDF5FA;
+    align-self: flex-end;
+    text-align: right;
+    margin-left: auto;
+}
+
+.burbuja-otro {
+    background-color: #e1e1e1;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.txtMensaje {
+    width: 70%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.btn-enviar {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-mini {
+    font-size: 10px;
+    margin: 2px;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-volver {
+    width: 100%;
+    padding: 10px;
+    background-color: #F07594;
+    border: none;
+    cursor: pointer;
+}
+.mensajes .txtMensaje {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
 }
