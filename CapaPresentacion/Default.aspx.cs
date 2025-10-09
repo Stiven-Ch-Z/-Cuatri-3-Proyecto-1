@@ -13,5 +13,16 @@ namespace Proyecto1
         {
 
         }
+        protected void btnEnviar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(ddlAlias.SelectedValue))
+            {
+                lblerror.Text = "Por favor selecciona un alias antes de continuar."; //validacion para evitar el ddl vacio
+                return;
+            }
+
+            string alias = ddlAlias.SelectedValue; //mandar el alias al chat con querystring
+            Response.Redirect($"Chat.aspx?alias={alias}");
+        }
     }
 }

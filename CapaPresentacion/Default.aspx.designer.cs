@@ -24,13 +24,13 @@ namespace Proyecto1
         protected global::System.Web.UI.WebControls.Label lblalias;
 
         /// <summary>
-        /// Control ddlplaneta.
+        /// Control ddlAlias.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlplaneta;
+        protected global::System.Web.UI.WebControls.DropDownList ddlAlias;
 
         /// <summary>
         /// Control btnenviar.
@@ -42,12 +42,12 @@ namespace Proyecto1
         protected global::System.Web.UI.WebControls.Button btnenviar;
 
         /// <summary>
-        /// Control lblmensaje.
+        /// Control lblerror.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblmensaje;
+        protected global::System.Web.UI.WebControls.Label lblerror;
     }
 }

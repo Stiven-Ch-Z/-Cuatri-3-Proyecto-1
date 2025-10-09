@@ -3,20 +3,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Viajes Espaciales (examen)</title>
-    <link rel="stylesheet" type="text/css" href="estilos/styles.css" />
+    <title>Proyecto-1</title>
+    <link rel="stylesheet" type="text/css" href="Estilos/estilos.css" />
 </head>
 
 <body>
     <form i="form1" runat="server">
-    <div class="Seleccion_alias">
+    <div class="panel">
         <h1>¡Bienvenido a FastChat!</h1>
-        <h2>¡Selecciona un apodo para comenzar!</h2>
+        <h2>¡Primero selecciona un apodo!</h2>
         <hr />
         <div>
-            <asp:Label ID="lblalias" runat="server" Text="⬇ Selecciona aqui ⬇" AssociatedControlID="ddlalias" />
+            <asp:Label ID="lblalias" runat="server" Text="⬇ Elije aqui ⬇" CssClass="Droplista" AssociatedControlID="ddlAlias" />
             <br /><br />
-            <asp:DropDownList ID="ddlplaneta" runat="server">
+            <asp:DropDownList ID="ddlAlias" runat="server">
                 <asp:ListItem></asp:ListItem>
                 <asp:ListItem>Jorge El Curioso</asp:ListItem>
                 <asp:ListItem>Esteban Quito</asp:ListItem>
@@ -26,10 +26,10 @@
             <hr />
         </div>
         <div>
-            <asp:Button ID="btnenviar" runat="server" Text="Siguiente" OnClick="btnEnviar_Click" />
+            <asp:Button ID="btnenviar" runat="server" Text="Siguiente" CssClass="btn" OnClick="btnEnviar_Click" />
         </div>
         <div>
-            <asp:Label ID="lblmensaje" runat="server" />
+            <asp:Label ID="lblerror" runat="server" />
         </div>
     </div>
    </form>
